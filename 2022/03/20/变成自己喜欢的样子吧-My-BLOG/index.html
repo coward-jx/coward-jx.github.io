@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives: 2022/3 | Hexo</title>
+  <title>变成自己喜欢的样子吧--My BLOG | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -167,87 +167,119 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/666.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2022/03/20/变成自己喜欢的样子吧-My-BLOG/">变成自己喜欢的样子吧--My BLOG</a></h4>
-                            
-                            <p><time datetime="2022-03-20T07:47:22.000Z"><a href="/2022/03/20/变成自己喜欢的样子吧-My-BLOG/">2022-03-20</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2022/03/20/zkaq题解/">zkaqsql注入题解</a></h4>
-                            
-                            <p><time datetime="2022-03-20T07:34:13.000Z"><a href="/2022/03/20/zkaq题解/">2022-03-20</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2022/03/19/hello-world/">Hello World</a></h4>
-                            
-                            <p><time datetime="2022-03-19T11:45:08.356Z"><a href="/2022/03/19/hello-world/">2022-03-19</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2022-03-20T07:47:22.000Z" itemprop="datePublished">
+          2022-03-20
+      </time>
+    
+    
+    | 
+    <a href='/tags/技巧/'>技巧</a>
+    
+    
+</span>
+                <h1>变成自己喜欢的样子吧--My BLOG</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<p>emmm……调整主题中遇到的，嘿嘿</p>
+<p>首先一个就是这个当时让自己纠结好久的问题(报错让自己头疼！！！)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo使用theme出现“ &#123;% extends ‘_layout.swig‘ %&#125; &#123;% <span class="keyword">import</span> ‘_macro/post.swig‘ as post_template %&#125;“问题</span><br></pre></td></tr></table></figure>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
+<p>解决方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">原因是hexo在<span class="number">5.0</span>之后把swig给删除了需要自己手动安装</span><br><span class="line">npm i hexo-renderer-swig</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>主题调整的文件主要在该主题文件下的_config.yml里面，打开修改就可以啦</strong></p>
+<p>首先注意注意！！！_config.yml里面的东西，”:”后面一定要空一格再输入东西</p>
+<p><strong>使用小技巧</strong></p>
+<p><strong>First</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># config</span><br><span class="line">cover: /img/<span class="number">666.</span>jpg                <span class="comment">//图片选择，在source文件夹下的img文件里</span></span><br><span class="line">logo: /img/888logo.ico             <span class="comment">//左上角图标，同样在source文件夹下的img文件里</span></span><br><span class="line">top_saying:</span><br><span class="line">- title: YOU<span class="string">&#x27;VE MADE A &lt;span&gt;BRAVE&lt;/span&gt; DECISION, WELCOME.    </span></span><br><span class="line"><span class="string">- content: 每一个不曾起舞的日子都是对生命的辜负。//从这里就能看出来，是一开始时候的话             </span></span><br><span class="line"><span class="string">bottom_saying: 虽然还没想好写点什么，但是总觉得这里放句话比较和谐。//底端的话</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>Second</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Miscellaneous        <span class="comment">//可以在这些网址后面补充上自己的地址，应该就可以通过点击图标跳转过去啵  </span></span><br><span class="line">github: https:<span class="comment">//github.com/ </span></span><br><span class="line">twitter: https:<span class="comment">//twitter.com/</span></span><br><span class="line">facebook: https:<span class="comment">//www.facebook.com/</span></span><br><span class="line">google: https:<span class="comment">//google.com/</span></span><br><span class="line">weibo: http:<span class="comment">//weibo.com/</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>Third</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#Links    <span class="comment">//也是跳转页面用的，可以改成自己想要的名字和想去的地址或者常用的地址，在右上角的三杠那里</span></span><br><span class="line">links:</span><br><span class="line">- name: Kieran</span><br><span class="line">  link: http:<span class="comment">//go.kieran.top/</span></span><br><span class="line">- name: Name</span><br><span class="line">  link: http:<span class="comment">//domain.com/</span></span><br></pre></td></tr></table></figure>
+
+<p>目前只摸索到这些，期待后续……</p>
+<p><strong>写BLOG时需要注意的</strong></p>
+<p>一定记得”:”后面空一格在写东西呦</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title:             <span class="comment">//BLOG显示的标题，文件名可不是BLOG名，这里的才是</span></span><br><span class="line">date:              <span class="comment">//标题上方显示的时间</span></span><br><span class="line">tags:              <span class="comment">//给自己的BLOG加个小标签，好分类 </span></span><br></pre></td></tr></table></figure>
+
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    
+    <a class="pull-right" href="/2022/03/20/zkaq%E9%A2%98%E8%A7%A3/">
+        zkaqsql注入题解 →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
